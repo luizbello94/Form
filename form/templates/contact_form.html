@@ -17,7 +17,16 @@
 
     </head>
     <body>
-        <div class="bg-white">
+      <div class="bg-white relative min-h-screen flex flex-col justify-center items-center">
+        <!-- Círculos de fondo -->
+        <div class="absolute w-24 h-24 bg-gray-300 rounded-full hover:bg-gray-400 transition-colors duration-300 ease-in-out top-10 left-10"></div>
+        <div class="absolute w-32 h-32 bg-gray-300 rounded-full hover:bg-gray-400 transition-colors duration-300 ease-in-out top-32 right-20"></div>
+        <div class="absolute w-40 h-40 bg-gray-300 rounded-full hover:bg-gray-400 transition-colors duration-300 ease-in-out bottom-20 left-20"></div>
+        <div class="absolute w-16 h-16 bg-gray-300 rounded-full hover:bg-gray-400 transition-colors duration-300 ease-in-out bottom-32 right-10"></div>
+        <div class="absolute w-28 h-28 bg-gray-300 rounded-full hover:bg-gray-400 transition-colors duration-300 ease-in-out top-1/2 left-1/4"></div>
+        <div class="absolute w-20 h-20 bg-gray-300 rounded-full hover:bg-gray-400 transition-colors duration-300 ease-in-out bottom-1/4 right-1/4"></div>
+        <!-- Fin de los círculos -->
+     
             <header class="absolute inset-x-0 top-0 z-50">
               <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
                 <div class="flex lg:flex-1">
@@ -304,7 +313,7 @@
                       src="https://images.pexels.com/photos/2803160/pexels-photo-2803160.jpeg?auto=compress&cs=tinysrgb&w=600" />
               </div>
               <!-- Segunda fila con una sola imagen -->
-              <div data-aos="zoom-in"  data-aos-duration="2000" class="w-full p-2">
+              <div data-aos="zoom-in"  data-aos-duration="2000" class=" h-50 w-full p-2">
                   <img
                       alt="gallery"
                       class="block w-full rounded-lg object-cover object-center "
