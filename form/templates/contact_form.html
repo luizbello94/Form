@@ -1,368 +1,327 @@
-
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-        <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-        <script src="https://cdn.tailwindcss.com"></script>
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet"> 
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Raleway:wght@100&display=swap" rel="stylesheet"> 
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Raleway:wght@100&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="bg-white relative min-h-screen flex flex-col justify-center items-center">
+      <!-- Círculos de fondo -->
+      <button data-aos="fade-up" data-aos-duration="2000" class="absolute w-24 h-24 bg-gray-300 rounded-full hover:bg-gray-400 transition-colors duration-300 ease-in-out top-10 left-10"></button>
+      <button data-aos="fade-up" data-aos-duration="2000" class="absolute w-32 h-32 bg-gray-300 rounded-full hover:bg-gray-400 transition-colors duration-300 ease-in-out top-32 right-20"></button>
+      <button data-aos="fade-up" data-aos-duration="2000" class="absolute w-40 h-40 bg-gray-300 rounded-full hover:bg-gray-400 transition-colors duration-300 ease-in-out bottom-20 left-20"></button>
+      <button data-aos="fade-up" data-aos-duration="2000" class="absolute w-16 h-16 bg-gray-300 rounded-full hover:bg-gray-400 transition-colors duration-300 ease-in-out bottom-32 right-10"></button>
+      <button data-aos="fade-up" data-aos-duration="2000" class="absolute w-28 h-28 bg-gray-300 rounded-full hover:bg-gray-400 transition-colors duration-300 ease-in-out top-1/2 left-1/4"></button>
+      <button data-aos="fade-up" data-aos-duration="2000" class="absolute w-20 h-20 bg-gray-300 rounded-full hover:bg-gray-400 transition-colors duration-300 ease-in-out bottom-1/4 right-1/4"></button>
+      <!-- Fin de los círculos -->
 
-    </head>
-    <body>
-      <div class="bg-white relative min-h-screen flex flex-col justify-center items-center">
-        <!-- Círculos de fondo -->
-        <button  data-aos="fade-up" data-aos-duration="2000"  class="absolute w-24 h-24 bg-gray-300 rounded-full hover:bg-gray-400 transition-colors duration-300 ease-in-out top-10 left-10"></button>
-        <button  data-aos="fade-up" data-aos-duration="2000" class="absolute w-32 h-32 bg-gray-300 rounded-full hover:bg-gray-400 transition-colors duration-300 ease-in-out top-32 right-20"></button>
-        <button  data-aos="fade-up" data-aos-duration="2000" class="absolute w-40 h-40 bg-gray-300 rounded-full hover:bg-gray-400 transition-colors duration-300 ease-in-out bottom-20 left-20"></button>
-        <button  data-aos="fade-up" data-aos-duration="2000"class="absolute w-16 h-16 bg-gray-300 rounded-full hover:bg-gray-400 transition-colors duration-300 ease-in-out bottom-32 right-10"></button>
-        <button  data-aos="fade-up" data-aos-duration="2000" class="absolute w-28 h-28 bg-gray-300 rounded-full hover:bg-gray-400 transition-colors duration-300 ease-in-out top-1/2 left-1/4"></button>
-        <button data-aos="fade-up" data-aos-duration="2000" class="absolute w-20 h-20 bg-gray-300 rounded-full hover:bg-gray-400 transition-colors duration-300 ease-in-out bottom-1/4 right-1/4"></button>
-        <!-- Fin de los círculos -->
-     
-            <header class="absolute inset-x-0 top-0 z-50">
-              <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
-                <div class="flex lg:flex-1">
-                  <a data-aos="fade-up" data-aos-duration="2000" href="#" class="-m-1.5 p-1.5">
-                    <span class="sr-only">Your Company</span>
-                    <img class="h-8 w-auto" src="" alt="">
-                  </a>
+      <header class="absolute inset-x-0 top-0 z-50">
+        <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+          <div class="flex lg:flex-1">
+            <a data-aos="fade-up" data-aos-duration="2000" href="#" class="-m-1.5 p-1.5">
+              <span class="sr-only">Your Company</span>
+              <img class="h-8 w-auto" src="" alt="" />
+            </a>
+          </div>
+
+          <div style="font-family: 'Raleway',sans-serif; line-height: 1.6; color: #333;" class="lg:flex lg:flex-1 lg:justify-end">
+            <a data-aos="fade-up" data-aos-duration="2000" href="https://www.linkedin.com/in/luis-ernesto-p%C3%A9rez-bello-91a709210/" class="rounded-md bg-gray-800 px-4 py-3 text-base text-white shadow-sm hover:bg-gray-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600">Resume</a>
+          </div>
+        </nav>
+      </header>
+
+      <div class="relative isolate px-6 pt-14 lg:px-8" style="font-family: 'Raleway',sans-serif; line-height: 1.6; color: #333;">
+        <div class="mx-auto max-w-2xl py-12 sm:py-10 lg:py-10">
+          <div class="text-center">
+            <h1 data-aos="fade-up" data-aos-duration="2000" style="font-size: 2.5em; font-weight: bold; margin-bottom: 20px;">Python Developer</h1>
+            <h1 data-aos="fade-up" data-aos-duration="2000" style="font-size: 2.5em; font-weight: bold; margin-bottom: 20px;">Luis Bello</h1>
+
+            <p data-aos="fade-up" data-aos-duration="2000" style="font-family: 'Open Sans', sans-serif; font-size: 1em; font-weight: 400; margin-bottom: 20px;">Hey there! I'm Luis. I’m passionate about crafting websites that not only look great but also deliver seamless user experiences. Over the years, I've worked on various projects, ensuring each one is special and meets the unique needs of the client. Beyond the technical side, I believe in the power of collaboration and communication. I pride myself on my ability to understand and connect with both clients and team members. Navigating challenges, staying organized, and continuous learning are just part of my everyday.</p>
+
+            <div class="mt-10 flex items-center justify-center gap-x-6">
+              <div data-aos="fade-up" data-aos-duration="2000" class="text-center">
+                <img src="https://media.licdn.com/dms/image/D4E03AQGSfNcv-2JOIQ/profile-displayphoto-shrink_800_800/0/1694702502036?e=1709769600&v=beta&t=f7aq8boA3JhXSB-03iuHR9mQeIorVwSfz8nb8S0GP6g" class="mx-auto mb-2 w-32 rounded-lg" alt="Avatar" />
+                <a href="https://www.linkedin.com/in/luis-ernesto-p%C3%A9rez-bello-91a709210/" class="rounded-md bg-gray-800 px-6 py-1 text-base font-semibold text-white shadow-sm hover:bg-gray-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600" style="transition: background-color 0.3s ease;">@Luis Bello</a>
+              </div>
+            </div>
+
+            <div class="mt-10 items-center justify-center">
+              <h1 data-aos="fade-up" data-aos-duration="1000" style="font-size: 2.5em; font-weight: bold; margin-bottom: 20px;">Set Skills</h1>
+              <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+              <div data-aos="fade-up" data-aos-duration="1000" class="">
+                <div class="inline-flex ">
+                  <!-- Cambiando el color de los íconos a blanco para mejor contraste con el fondo oscuro -->
+                  <span data-tooltip-target="money" class="cursor-pointer rounded-full border border-gray-500/5 bg-gray-700 p-3 text-white transition-colors hover:border-gray-600/10 hover:bg-gray-600 hover:text-white group-hover:opacity-70">
+                    <svg fill="#ffffff" width="19" height="19" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M61.7 23.9996C60.6 19.7996 58.6 16.4996 54.4 16.4996H48.8V23.0996C48.8 28.1996 44.4 32.4996 39.7 32.4996H24.8C20.7 32.4996 17.5 35.9996 17.5 40.0996V54.1996C17.5 58.0996 21 60.4996 24.8 61.7996C29.4 63.1996 33.9 63.4996 39.6 61.7996C43.3 60.6996 46.9 58.5996 46.9 54.1996V48.5996H32.2V46.7996H54.4C58.6 46.7996 60.3 43.7996 61.7 39.2996C63.2 34.3996 63.2 29.8996 61.7 23.9996ZM40.5 51.9996C42 51.9996 43.3 53.2996 43.3 54.7996C43.3 56.2996 42 57.5996 40.5 57.5996C39 57.6996 37.7 56.2996 37.7 54.7996C37.6 53.2996 38.9 51.9996 40.5 51.9996ZM24.1 30.5996H38.9C43 30.5996 46.2 27.1996 46.2 22.9996V9.09961C46.2 5.19961 42.8 2.19961 38.9 1.49961C34 0.799609 28.6 0.799609 24.1 1.49961C17.8 2.59961 16.8 4.89961 16.8 9.09961V14.6996H31.6V16.4996H11.4C7.2 16.4996 3.4 19.1996 2.3 23.9996C0.9 29.5996 0.9 33.0996 2.3 38.8996C3.4 43.2996 5.8 46.3996 10.2 46.3996H15V39.6996C14.9 34.7996 19.2 30.5996 24.1 30.5996ZM23.2 10.8996C21.7 10.8996 20.4 9.59961 20.4 8.09961C20.4 6.59961 21.7 5.29961 23.2 5.29961C24.7 5.29961 26 6.59961 26 8.09961C26 9.59961 24.7 10.8996 23.2 10.8996Z" />
+                    </svg>
+                  </span>
+                  <span data-tooltip-target="wifi" class="cursor-pointer rounded-full border border-gray-500/5 bg-gray-700 p-3 text-white transition-colors hover:border-gray-600/10 hover:bg-gray-600 hover:text-white group-hover:opacity-70">
+                    <svg fill="#ffffff" width="19" height="19" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M32.4991 47.3002C31.9991 47.3002 31.5991 47.2002 31.1991 47.0002L23.1991 43.8002C21.9991 43.3002 21.1991 42.3002 20.9991 41.1002L20.0991 36.1002C19.8991 34.9002 20.6991 33.7002 21.8991 33.5002C23.0991 33.3002 24.2991 34.1002 24.4991 35.3002L25.2991 39.8002L32.4991 42.7002L39.6991 39.7002L41.4991 30.8002H22.6991C20.9991 30.8002 19.4991 29.6002 19.1991 27.8002L17.7991 19.8002C17.5991 18.7002 17.8991 17.5002 18.5991 16.6002L18.6991 16.5002C19.4991 15.7002 20.4991 15.2002 21.6991 15.2002H44.8991C46.0991 15.2002 47.1991 16.2002 47.1991 17.5002C47.1991 18.8002 46.1991 19.8002 44.8991 19.8002H22.2991L23.4991 26.4002H42.6991C43.7991 26.4002 44.7991 26.9002 45.4991 27.7002C46.1991 28.5002 46.4991 29.6002 46.1991 30.7002L44.0991 41.0002C43.8991 42.2002 43.0991 43.2002 41.9991 43.6002L33.9991 46.9002C33.4991 47.2002 32.9991 47.3002 32.4991 47.3002Z" />
+                      <path d="M32 62.1998C31.4 62.1998 30.8 62.0998 30.2 61.9998L14.4 58.2998C11.3 57.5998 8.90002 54.8998 8.50002 51.6998L3.60002 10.3998C3.40002 8.1998 4.10002 5.9998 5.50002 4.2998C7.00002 2.6998 9.10002 1.7998 11.3 1.7998H52.7C54.9 1.7998 57 2.6998 58.5 4.3998C60 5.9998 60.7 8.2998 60.4 10.3998L55.5 51.6998C55.1 54.8998 52.7 57.5998 49.6 58.2998L33.8 61.9998C33.2 62.1998 32.6 62.1998 32 62.1998ZM11.3 6.2998C10.4 6.2998 9.50002 6.69981 8.90002 7.39981C8.30002 7.99981 8.00002 8.8998 8.10002 9.8998L13 51.1998C13.2 52.4998 14.1 53.5998 15.5 53.9998L31.3 57.6998C31.8 57.7998 32.3 57.7998 32.8 57.6998L48.5 53.9998C49.8 53.6998 50.8 52.5998 51 51.1998L55.9 9.8998C56 8.8998 55.7 7.9998 55.1 7.2998C54.5 6.5998 53.6 6.1998 52.7 6.1998H11.3V6.2998Z" />
+                    </svg>
+                    
+                  </span>
+                  <span data-tooltip-target="tv" class="cursor-pointer rounded-full border border-gray-500/5 bg-gray-700 p-3 text-white transition-colors hover:border-gray-600/10 hover:bg-gray-600 hover:text-white group-hover:opacity-70">
+                    <svg fill="#ffffff" width="19" height="19" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M17.5857 26C19.5546 18.0003 24.4783 14 32.3549 14C44.1703 14 45.6472 23 51.5549 24.5C55.4936 25.5003 58.9395 24.0003 61.8934 20C59.9244 27.9997 55.0007 32 47.1241 32C35.3087 32 33.8318 23 27.9241 21.5C23.9854 20.4997 20.5395 21.9997 17.5857 26ZM2.81641 44C4.78532 36.0003 9.70902 32 17.5857 32C29.401 32 30.878 41 36.7857 42.5C40.7244 43.5003 44.1703 42.0003 47.1241 38C45.1552 45.9997 40.2315 50 32.3549 50C20.5395 50 19.0626 41 13.1549 39.5C9.21609 38.4997 5.77025 39.9997 2.81641 44Z" />
+                    </svg>
+                  </span>
+                  
+                  <span data-tooltip-target="fire" class="cursor-pointer rounded-full border border-gray-500/5 bg-gray-700 p-3 text-white transition-colors hover:border-gray-600/10 hover:bg-gray-600 hover:text-white group-hover:opacity-70">
+                    <svg fill="#ffffff" width="19" height="19" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 1V63H63V1H1ZM34.8 49.3C34.8 55.4 31.2 58.2 26 58.2C21.4 58.2 18.7 55.8 17.3 52.8L22.1 49.8C22.9 51.5 23.8 52.8 25.9 52.8C27.9 52.8 29 52.1 29 49.1V29.5H34.8V49.3ZM48.6 58.2C43.2 58.2 39.7 55.5 37.9 52.3L42.7 49.5C44 51.5 45.7 53 48.5 53C50.9 53 52.4 51.9 52.4 50C52.4 48 50.9 47.3 48.2 46.1L46.8 45.5C42.6 43.8 39.8 41.4 39.8 36.6C39.8 32.2 43 29 48.3 29C52 29 54.6 30.3 56.5 33.7L52 36.7C51 35 50 34.2 48.2 34.2C46.5 34.2 45.4 35.3 45.4 36.7C45.4 38.4 46.5 39.1 48.9 40.2L50.3 40.8C55.2 42.9 58.1 45 58.1 50C58.2 55.3 54.1 58.2 48.6 58.2Z" />
+                    </svg>
+                  </span>
+                  
+                  <span data-tooltip-target="fire" class="cursor-pointer rounded-full border border-gray-500/5 bg-gray-700 p-3 text-white transition-colors hover:border-gray-600/10 hover:bg-gray-600 hover:text-white group-hover:opacity-70">
+                    <svg fill="#ffffff" xmlns="http://www.w3.org/2000/svg" height="19" width="19" viewBox="0 0 576 550"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                      <path d="M333.5 201.4c0-22.1-15.6-34.3-43-34.3h-50.4v71.2h42.5C315.4 238.2 333.5 225 333.5 201.4zM517 188.6c-9.5-30.9-10.9-68.8-9.8-98.1c1.1-30.5-22.7-58.5-54.7-58.5H123.7c-32.1 0-55.8 28.1-54.7 58.5c1 29.3-.3 67.2-9.8 98.1c-9.6 31-25.7 50.6-52.2 53.1v28.5c26.4 2.5 42.6 22.1 52.2 53.1c9.5 30.9 10.9 68.8 9.8 98.1c-1.1 30.5 22.7 58.5 54.7 58.5h328.7c32.1 0 55.8-28.1 54.7-58.5c-1-29.3 .3-67.2 9.8-98.1c9.6-31 25.7-50.6 52.1-53.1v-28.5C542.7 239.2 526.5 219.6 517 188.6zM300.2 375.1h-97.9V136.8h97.4c43.3 0 71.7 23.4 71.7 59.4c0 25.3-19.1 47.9-43.5 51.8v1.3c33.2 3.6 55.5 26.6 55.5 58.3C383.4 349.7 352.1 375.1 300.2 375.1zM290.2 266.4h-50.1v78.4h52.3c34.2 0 52.3-13.7 52.3-39.5C344.7 279.6 326.1 266.4 290.2 266.4z"/>
+                    </svg>
+                  </span>
+                  
+                  <span data-tooltip-target="fire" class="cursor-pointer rounded-full border border-gray-500/5 bg-gray-700 p-3 text-white transition-colors hover:border-gray-600/10 hover:bg-gray-600 hover:text-white group-hover:opacity-70">
+                    <svg  fill="#ffffff" xmlns="http://www.w3.org/2000/svg" height="19" width="19" viewBox="0 0 496 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                      <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+                    </svg>
+                  </span>
+
+                  <span data-tooltip-target="fire" class="cursor-pointer rounded-full border border-gray-500/5 bg-gray-700 p-3 text-white transition-colors hover:border-gray-600/10 hover:bg-gray-600 hover:text-white group-hover:opacity-70">
+                    <svg  fill="#ffffff" xmlns="http://www.w3.org/2000/svg" height="19" width="19" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zm-312 8v64c0 13.3 10.7 24 24 24s24-10.7 24-24l0-64c0-13.3-10.7-24-24-24s-24 10.7-24 24zm80-96V280c0 13.3 10.7 24 24 24s24-10.7 24-24V120c0-13.3-10.7-24-24-24s-24 10.7-24 24zm80 64v96c0 13.3 10.7 24 24 24s24-10.7 24-24V184c0-13.3-10.7-24-24-24s-24 10.7-24 24z"/>
+                    </svg>
+                  </span>
                 </div>
-                
-               
-                <div style="font-family: 'Raleway',sans-serif; line-height: 1.6; color: #333;" class="lg:flex lg:flex-1 lg:justify-end">
-                  <a data-aos="fade-up" data-aos-duration="2000" href="https://www.linkedin.com/in/luis-ernesto-p%C3%A9rez-bello-91a709210/" class="rounded-md bg-gray-800 px-4 py-3 text-base text-white shadow-sm hover:bg-gray-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600">Resume</a>
-              </div>
-              
-              </nav>
-             
-            </header>
-          
-            <div class="relative isolate px-6 pt-14 lg:px-8" style="font-family: 'Raleway',sans-serif; line-height: 1.6; color: #333;">
-              <div class="mx-auto max-w-2xl py-12 sm:py-10 lg:py-10">
-                  <div class="text-center">
-                      <h1 data-aos="fade-up" data-aos-duration="2000" style="font-size: 2.5em; font-weight: bold; margin-bottom: 20px;">Python Developer</h1>
-                      <h1 data-aos="fade-up" data-aos-duration="2000" style="font-size: 2.5em; font-weight: bold; margin-bottom: 20px;">Luis Bello</h1>
-          
-                      <p data-aos="fade-up" data-aos-duration="2000" style="font-family: 'Open Sans', sans-serif; font-size: 1em; font-weight: 400; margin-bottom: 20px;">
-                          Hey there! I'm Luis. I’m passionate about crafting websites that not only look great but also deliver seamless user experiences. 
-                          Over the years, I've worked on various projects, ensuring each one is special and meets the unique needs of the client.
-                          Beyond the technical side, I believe in the power of collaboration and communication. I pride myself on my ability to understand and connect with both clients and team members. 
-                          Navigating challenges, staying organized, and continuous learning are just part of my everyday.
-                      </p>
-          
-                      <div class="mt-10 flex items-center justify-center gap-x-6">
-                          <div data-aos="fade-up" data-aos-duration="2000" class="text-center">
-                              <img src="https://media.licdn.com/dms/image/D4E03AQGSfNcv-2JOIQ/profile-displayphoto-shrink_800_800/0/1694702502036?e=1709769600&v=beta&t=f7aq8boA3JhXSB-03iuHR9mQeIorVwSfz8nb8S0GP6g" class="mx-auto mb-2 w-32 rounded-lg" alt="Avatar" />
-                              <a href="https://www.linkedin.com/in/luis-ernesto-p%C3%A9rez-bello-91a709210/" class="rounded-md bg-gray-800 px-6 py-1 text-base font-semibold text-white shadow-sm hover:bg-gray-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600" style="transition: background-color 0.3s ease;">@Luis Bello</a>
-                          </div>
-                      </div>
-                      
-                      <div class="mt-10 items-center justify-center">
-                          <h1 data-aos="fade-up" data-aos-duration="1000" style="font-size: 2.5em; font-weight: bold; margin-bottom: 20px;">Skills</h1>
-                          <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-                          <p data-aos="fade-up" data-aos-duration="1000" style="font-family: 'Open Sans', sans-serif; font-size: 1em; font-weight: 400; margin-bottom: 20px;">
-                              
-                          </p>
-                      </div>
-                      <div class="mt-10 items-center justify-center">
-                        <h1 data-aos="fade-up" data-aos-duration="1000" style="font-size: 2.5em; font-weight: bold; margin-bottom: 20px;">Projects</h1>
-                        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-                        <p data-aos="fade-up" data-aos-duration="1000" style="font-family: 'Open Sans', sans-serif; font-size: 1em; font-weight: 400; margin-bottom: 20px;">
-                            In my freelance journey, I've always been driven by the end result, ensuring each website stands out and serves its purpose. I love teaming up with diverse individuals, always aiming to leave a lasting digital impression.
-                        </p>
-                    </div>
-                  </div>
-              </div>
-          </div>
-          
-          
-          </div>
-        
-        <div class="text-center"  style="font-family: 'Raleway',sans-serif; line-height: 1.6; color: #333;">
-          <div class="m-3 grid grid-cols-2 md:grid-cols-3 gap-4">
-            <div data-aos="fade-up" data-aos-duration="2000" class="group relative bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
-              <h5 class="m-2 text-2xl md:text-xl sm:text-lg font-semibold leading-snug tracking-tight text-gray-600 shadow-sm ">Dinamico Games</h5>                
-              <img class="h-auto max-w-full rounded-lg transition duration-300 ease-in-out transform group-hover:scale-105" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg" alt="">
-              <!-- Overlay -->
-              <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out">
-                  <div class="bg-black bg-opacity-60 h-full w-full flex items-center justify-center">
-                      <div class="text-center p-4">
-                          <p class="mb-2 text-white sm:text-sm md:text-base">Dinamico Games is an idea to learn vocabulary on kids with some dissability.</p>
-                          <button class="rounded-md bg-gray-800 px-6 py-1 text-base font-semibold text-white shadow-sm hover:bg-gray-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600" style="transition: background-color 0.3s ease;"> <a href="https://play.google.com/store/apps/details?id=com.DinamicoGames.LecturaInteractiva&hl=en&gl=US">Let's take a look</a></button>
-                          <!------ Icons --------->
-                          <div class="text-center m-3">
-                            <div class="inline-flex flex-wrap group m-2">
-                              <!-- Cambiando el color de los íconos a blanco para mejor contraste con el fondo oscuro -->
-                              <span data-tooltip-target="money" class="cursor-pointer rounded-full border border-gray-500/5 bg-gray-700 p-3 text-white transition-colors hover:border-gray-600/10 hover:bg-gray-600 hover:text-white group-hover:opacity-70">
-                                  <svg fill="#ffffff" width="19" height="19" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><path d="M61.7 23.9996C60.6 19.7996 58.6 16.4996 54.4 16.4996H48.8V23.0996C48.8 28.1996 44.4 32.4996 39.7 32.4996H24.8C20.7 32.4996 17.5 35.9996 17.5 40.0996V54.1996C17.5 58.0996 21 60.4996 24.8 61.7996C29.4 63.1996 33.9 63.4996 39.6 61.7996C43.3 60.6996 46.9 58.5996 46.9 54.1996V48.5996H32.2V46.7996H54.4C58.6 46.7996 60.3 43.7996 61.7 39.2996C63.2 34.3996 63.2 29.8996 61.7 23.9996ZM40.5 51.9996C42 51.9996 43.3 53.2996 43.3 54.7996C43.3 56.2996 42 57.5996 40.5 57.5996C39 57.6996 37.7 56.2996 37.7 54.7996C37.6 53.2996 38.9 51.9996 40.5 51.9996ZM24.1 30.5996H38.9C43 30.5996 46.2 27.1996 46.2 22.9996V9.09961C46.2 5.19961 42.8 2.19961 38.9 1.49961C34 0.799609 28.6 0.799609 24.1 1.49961C17.8 2.59961 16.8 4.89961 16.8 9.09961V14.6996H31.6V16.4996H11.4C7.2 16.4996 3.4 19.1996 2.3 23.9996C0.9 29.5996 0.9 33.0996 2.3 38.8996C3.4 43.2996 5.8 46.3996 10.2 46.3996H15V39.6996C14.9 34.7996 19.2 30.5996 24.1 30.5996ZM23.2 10.8996C21.7 10.8996 20.4 9.59961 20.4 8.09961C20.4 6.59961 21.7 5.29961 23.2 5.29961C24.7 5.29961 26 6.59961 26 8.09961C26 9.59961 24.7 10.8996 23.2 10.8996Z"/></svg>   
-                              </span>
-                              <span data-tooltip-target="wifi" class="cursor-pointer rounded-full border border-gray-500/5 bg-gray-700 p-3 text-white transition-colors hover:border-gray-600/10 hover:bg-gray-600 hover:text-white group-hover:opacity-70">
-                                  <svg fill="#ffffff" width="19" height="19" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><path d="M32.4991 47.3002C31.9991 47.3002 31.5991 47.2002 31.1991 47.0002L23.1991 43.8002C21.9991 43.3002 21.1991 42.3002 20.9991 41.1002L20.0991 36.1002C19.8991 34.9002 20.6991 33.7002 21.8991 33.5002C23.0991 33.3002 24.2991 34.1002 24.4991 35.3002L25.2991 39.8002L32.4991 42.7002L39.6991 39.7002L41.4991 30.8002H22.6991C20.9991 30.8002 19.4991 29.6002 19.1991 27.8002L17.7991 19.8002C17.5991 18.7002 17.8991 17.5002 18.5991 16.6002L18.6991 16.5002C19.4991 15.7002 20.4991 15.2002 21.6991 15.2002H44.8991C46.0991 15.2002 47.1991 16.2002 47.1991 17.5002C47.1991 18.8002 46.1991 19.8002 44.8991 19.8002H22.2991L23.4991 26.4002H42.6991C43.7991 26.4002 44.7991 26.9002 45.4991 27.7002C46.1991 28.5002 46.4991 29.6002 46.1991 30.7002L44.0991 41.0002C43.8991 42.2002 43.0991 43.2002 41.9991 43.6002L33.9991 46.9002C33.4991 47.2002 32.9991 47.3002 32.4991 47.3002Z"/><path d="M32 62.1998C31.4 62.1998 30.8 62.0998 30.2 61.9998L14.4 58.2998C11.3 57.5998 8.90002 54.8998 8.50002 51.6998L3.60002 10.3998C3.40002 8.1998 4.10002 5.9998 5.50002 4.2998C7.00002 2.6998 9.10002 1.7998 11.3 1.7998H52.7C54.9 1.7998 57 2.6998 58.5 4.3998C60 5.9998 60.7 8.2998 60.4 10.3998L55.5 51.6998C55.1 54.8998 52.7 57.5998 49.6 58.2998L33.8 61.9998C33.2 62.1998 32.6 62.1998 32 62.1998ZM11.3 6.2998C10.4 6.2998 9.50002 6.69981 8.90002 7.39981C8.30002 7.99981 8.00002 8.8998 8.10002 9.8998L13 51.1998C13.2 52.4998 14.1 53.5998 15.5 53.9998L31.3 57.6998C31.8 57.7998 32.3 57.7998 32.8 57.6998L48.5 53.9998C49.8 53.6998 50.8 52.5998 51 51.1998L55.9 9.8998C56 8.8998 55.7 7.9998 55.1 7.2998C54.5 6.5998 53.6 6.1998 52.7 6.1998H11.3V6.2998Z"/></svg>
-                              </span>
-                              <span data-tooltip-target="tv" class="cursor-pointer rounded-full border border-gray-500/5 bg-gray-700 p-3 text-white transition-colors hover:border-gray-600/10 hover:bg-gray-600 hover:text-white group-hover:opacity-70">
-                                  <svg fill="#ffffff" width="19" height="19" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M17.5857 26C19.5546 18.0003 24.4783 14 32.3549 14C44.1703 14 45.6472 23 51.5549 24.5C55.4936 25.5003 58.9395 24.0003 61.8934 20C59.9244 27.9997 55.0007 32 47.1241 32C35.3087 32 33.8318 23 27.9241 21.5C23.9854 20.4997 20.5395 21.9997 17.5857 26ZM2.81641 44C4.78532 36.0003 9.70902 32 17.5857 32C29.401 32 30.878 41 36.7857 42.5C40.7244 43.5003 44.1703 42.0003 47.1241 38C45.1552 45.9997 40.2315 50 32.3549 50C20.5395 50 19.0626 41 13.1549 39.5C9.21609 38.4997 5.77025 39.9997 2.81641 44Z"/></svg>
-                              </span>
-                              <span data-tooltip-target="fire" class="cursor-pointer rounded-full border border-gray-500/5 bg-gray-700 p-3 text-white transition-colors hover:border-gray-600/10 hover:bg-gray-600 hover:text-white group-hover:opacity-70">
-                                  <svg fill="#ffffff" width="19" height="19" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><path d="M1 1V63H63V1H1ZM34.8 49.3C34.8 55.4 31.2 58.2 26 58.2C21.4 58.2 18.7 55.8 17.3 52.8L22.1 49.8C22.9 51.5 23.8 52.8 25.9 52.8C27.9 52.8 29 52.1 29 49.1V29.5H34.8V49.3ZM48.6 58.2C43.2 58.2 39.7 55.5 37.9 52.3L42.7 49.5C44 51.5 45.7 53 48.5 53C50.9 53 52.4 51.9 52.4 50C52.4 48 50.9 47.3 48.2 46.1L46.8 45.5C42.6 43.8 39.8 41.4 39.8 36.6C39.8 32.2 43 29 48.3 29C52 29 54.6 30.3 56.5 33.7L52 36.7C51 35 50 34.2 48.2 34.2C46.5 34.2 45.4 35.3 45.4 36.7C45.4 38.4 46.5 39.1 48.9 40.2L50.3 40.8C55.2 42.9 58.1 45 58.1 50C58.2 55.3 54.1 58.2 48.6 58.2Z"/></svg>
-                              </span>
-                            </div>
-                          </div>
-                         
-                      
-                      
-                        </div>
-                  </div>
               </div>
             </div>
-          
-            <div data-aos="fade-up" data-aos-duration="2000" class="group relative bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
-              <h5 class="m-2 text-2xl md:text-xl sm:text-lg font-semibold leading-snug tracking-tight text-gray-600 shadow-sm">Us Delivery commerce</h5>                
-              <img class="h-auto max-w-full rounded-lg transition duration-300 ease-in-out transform group-hover:scale-105" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg" alt="">
-              <!-- Overlay -->
-              <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out">
-                  <div class="bg-black bg-opacity-60 h-full w-full flex items-center justify-center">
-                      <div class="text-center p-4">
-                          <p class="mb-2 text-white sm:text-sm md:text-base">Engaging gaming experiences right at your fingertips.</p>
-                          <button class="rounded-md bg-gray-800 px-6 py-1 text-base font-semibold text-white shadow-sm hover:bg-gray-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600" style="transition: background-color 0.3s ease;"> <a href="https://usadelivery.onrender.com/">Let's take a look</a></button>
-                      </div>
-                  </div>
-              </div>
-            </div>
-
-            <div data-aos="fade-up" data-aos-duration="2000" class="group relative bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
-              <h5 class="m-2 text-2xl md:text-xl sm:text-lg font-semibold leading-snug tracking-tight text-gray-600 shadow-sm">Key invesment</h5>                
-              <img class="h-auto max-w-full rounded-lg transition duration-300 ease-in-out transform group-hover:scale-105" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg" alt="">
-              <!-- Overlay -->
-              <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out">
-                  <div class="bg-black bg-opacity-60 h-full w-full flex items-center justify-center">
-                      <div class="text-center p-4">
-                          <p class="mb-2 text-white sm:text-sm md:text-base">Engaging gaming experiences right at your fingertips.</p>
-                          <button class="rounded-md bg-gray-800 px-6 py-1 text-base font-semibold text-white shadow-sm hover:bg-gray-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600" style="transition: background-color 0.3s ease;"> <a href="https://keyinvesmentnwv.onrender.com">Let's take a look</a></button>
-                      </div>
-                  </div>
-              </div>
-            </div>
-
-            <div data-aos="fade-up" data-aos-duration="2000" class="group relative bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
-              <h5 class="m-2 text-2xl md:text-xl sm:text-lg font-semibold leading-snug tracking-tight text-gray-600 shadow-sm">Machine Learning Prediction</h5>                
-              <img class="h-auto max-w-full rounded-lg transition duration-300 ease-in-out transform group-hover:scale-105" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg" alt="">
-              <!-- Overlay -->
-              <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out">
-                  <div class="bg-black bg-opacity-60 h-full w-full flex items-center justify-center">
-                      <div class="text-center p-4">
-                          <p class="mb-2 text-white sm:text-sm md:text-base">Engaging gaming experiences right at your fingertips.</p>
-                          <button class="rounded-md bg-gray-800 px-6 py-1 text-base font-semibold text-white shadow-sm hover:bg-gray-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600" style="transition: background-color 0.3s ease;"> <a href="https://play.google.com/store/apps/details?id=com.DinamicoGames.LecturaInteractiva&hl=en&gl=US">Let's take a look</a></button>
-
-                      </div>
-                  </div>
-              </div>
-            </div>
-            <div data-aos="fade-up" data-aos-duration="2000" class="group relative bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
-              <h5 class="m-2 text-2xl md:text-xl sm:text-lg font-semibold leading-snug tracking-tight text-gray-600 shadow-sm">Personal To do Task</h5>                
-              <img class="h-auto max-w-full rounded-lg transition duration-300 ease-in-out transform group-hover:scale-105" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg" alt="">
-              <!-- Overlay -->
-              <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out">
-                  <div class="bg-black bg-opacity-60 h-full w-full flex items-center justify-center">
-                      <div class="text-center p-4">
-                          <p class="mb-2 text-white sm:text-sm md:text-base">Engaging gaming experiences right at your fingertips.</p>
-                          <button class="rounded-md bg-gray-800 px-6 py-1 text-base font-semibold text-white shadow-sm hover:bg-gray-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600" style="transition: background-color 0.3s ease;"> <a href="https://play.google.com/store/apps/details?id=com.DinamicoGames.LecturaInteractiva&hl=en&gl=US">Let's take a look</a></button>
-
-                      </div>
-                  </div>
-              </div>
-            </div>
-            <div data-aos="fade-up" data-aos-duration="2000" class="group relative bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
-              <h5 class="m-2 text-2xl md:text-xl sm:text-lg font-semibold leading-snug tracking-tight text-gray-600 shadow-sm">Random</h5>                
-              <img class="h-auto max-w-full rounded-lg transition duration-300 ease-in-out transform group-hover:scale-105" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg" alt="">
-              <!-- Overlay -->
-              <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out">
-                  <div class="bg-black bg-opacity-60 h-full w-full flex items-center justify-center">
-                      <div class="text-center p-4">
-                          <p class="mb-2 text-white sm:text-sm md:text-base">Engaging gaming experiences right at your fingertips.</p>
-                          <button class="rounded-md bg-gray-800 px-6 py-1 text-base font-semibold text-white shadow-sm hover:bg-gray-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600" style="transition: background-color 0.3s ease;"> <a href="https://play.google.com/store/apps/details?id=com.DinamicoGames.LecturaInteractiva&hl=en&gl=US">Let's take a look</a></button>
-                      </div>
-                  </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="relative isolate px-6 pt-14 lg:px-8" style="font-family: 'Raleway',sans-serif; line-height: 1.6; color: #333;">
-          <div class="mx-auto max-w-2xl py-12 sm:py-10 lg:py-10">
-            <div class="text-center ">
-              
-              <h1 data-aos="flip-left" data-aos-duration="2000"  style="font-size: 2.5em; font-weight: bold; margin-bottom: 20px ;">About me</h1>
-
+            <div class="mt-10 items-center justify-center">
+              <h1 data-aos="fade-up" data-aos-duration="1000" style="font-size: 2.5em; font-weight: bold; margin-bottom: 20px;">Projects</h1>
               <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+              <p data-aos="fade-up" data-aos-duration="1000" style="font-family: 'Open Sans', sans-serif; font-size: 1em; font-weight: 400; margin-bottom: 20px;">In my freelance journey, I've always been driven by the end result, ensuring each website stands out and serves its purpose. I love teaming up with diverse individuals, always aiming to leave a lasting digital impression.</p>
             </div>
           </div>
         </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 m-7">
-          <!-- Columna para las imágenes -->
-          <div class="flex flex-wrap justify-between">
-              <!-- Primera fila con dos imágenes -->
-              <div data-aos="zoom-in"  data-aos-duration="2000" class="w-1/2 p-2">
-                  <img
-                      alt="gallery"
-                      class="block w-full rounded-lg object-cover object-center"
-                      src="https://images.unsplash.com/photo-1449247709967-d4461a6a6103?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
-              </div>
-              <div data-aos="zoom-in"  data-aos-duration="2000" class="w-1/2 p-2">
-                  <img
-                      alt="gallery"
-                      class="block w-full rounded-lg object-cover object-center"
-                      src="https://images.unsplash.com/photo-1493606278519-11aa9f86e40a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
-              </div>
-              <!-- Segunda fila con una sola imagen -->
-              <div data-aos="zoom-in"  data-aos-duration="2000" class="w-1/2 p-2">
-                <img
-                    alt="gallery"
-                    class="block w-full rounded-lg object-cover object-center"
-                    src="https://images.unsplash.com/photo-1471086569966-db3eebc25a59?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
-            </div>
-            <div data-aos="zoom-in"  data-aos-duration="2000" class="w-1/2 p-2">
-                <img
-                    alt="gallery"
-                    class="block w-full rounded-lg object-cover object-center"
-                    src="https://images.unsplash.com/photo-1502945015378-0e284ca1a5be?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
-            </div>
-          </div>
-          <!-- Columna para el texto -->
-          <div data-aos="fade-up" data-aos-duration="2000" style="font-family: 'Raleway',sans-serif; line-height: 1.6; color: #333;">
-            <p  class=" font-size: 1em; font-weight: 400; margin-bottom: 20px;" style="font-family: 'Open Sans', sans-serif; font-size: 1em; font-weight: 400; margin-bottom: 20px;">
-              As a passionate programmer who found magic in code, bringing innovative ideas to life through technology. My journey into the world of programming wasn't the traditional route; instead, I honed my skills through virtual schools and maximized the use of digital resources. 
-              <br><br>
-              This path gave me a unique and adaptable insight into learning and technical application. I don't just love to code, but I'm also an eternal learner. Every new concept or technique offers me a different perspective of the world. I strongly believe in researching and acting upon the knowledge I gather. 
-              <br><br>
-              To me, learning is a window to countless possibilities and worldviews.
-              <br><br>
-              But when I'm not engrossed in lines of code or seeking new knowledge, you'll find me diving into a pool, running a race, or engrossed in the pages of a manga. Engaging in sports, especially swimming and running, not only keeps me fit but also provides a means to clear my mind and find inspiration. And manga, with its tales and artistry, fuels my imagination and creativity.
-            </p>
-          
-          </div>
       </div>
-      
-        {% comment %}         
-        <div class="text-center"  style="font-family: 'Raleway',sans-serif; line-height: 1.6; color: #333;" >
-            <h1 data-aos="flip-left" data-aos-duration="2000" style="font-size: 2.5em; font-weight: bold; margin-bottom: 20px;">Contact me</h1>
-        </div> {% endcomment %}
-        <div class="relative isolate px-6 pt-14 lg:px-8" style="font-family: 'Raleway',sans-serif; line-height: 1.6; color: #333;">
-          <div class="mx-auto max-w-2xl py-12 sm:py-10 lg:py-10">
-            <div class="text-center ">
-              
-              <h1 data-aos="flip-left" data-aos-duration="2000"  style="font-size: 2.5em; font-weight: bold; margin-bottom: 20px ;">Contact me</h1>
+    </div>
 
-              <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+    <div class="text-center" style="font-family: 'Raleway',sans-serif; line-height: 1.6; color: #333;">
+      <div class="m-3 grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div data-aos="fade-up" data-aos-duration="2000" class="group relative bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
+          <h5 class="m-2 text-2xl md:text-xl sm:text-lg font-semibold leading-snug tracking-tight text-gray-600 shadow-sm">Dinamico Games</h5>
+          <img class="h-auto max-w-full rounded-lg transition duration-300 ease-in-out transform group-hover:scale-105" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg" alt="" />
+          <!-- Overlay -->
+          <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out">
+            <div class="bg-black bg-opacity-60 h-full w-full flex items-center justify-center">
+              <div class="text-center p-4">
+                <p class="mb-2 text-white sm:text-sm md:text-base">Dinamico Games is an idea to learn vocabulary on kids with some dissability.</p>
+                <button class="rounded-md bg-gray-800 px-6 py-1 text-base font-semibold text-white shadow-sm hover:bg-gray-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600" style="transition: background-color 0.3s ease;"><a href="https://keyinvesmentnwv.onrender.com">Let's take a look</a></button>
+                
+              </div>
             </div>
           </div>
         </div>
 
-        
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div data-aos="fade-up" data-aos-duration="2000" class="group relative bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
+          <h5 class="m-2 text-2xl md:text-xl sm:text-lg font-semibold leading-snug tracking-tight text-gray-600 shadow-sm">Us Delivery commerce</h5>
+          <img class="h-auto max-w-full rounded-lg transition duration-300 ease-in-out transform group-hover:scale-105" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg" alt="" />
+          <!-- Overlay -->
+          <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out">
+            <div class="bg-black bg-opacity-60 h-full w-full flex items-center justify-center">
+              <div class="text-center p-4">
+                <p class="mb-2 text-white sm:text-sm md:text-base">Engaging gaming experiences right at your fingertips.</p>
+                <button class="rounded-md bg-gray-800 px-6 py-1 text-base font-semibold text-white shadow-sm hover:bg-gray-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600" style="transition: background-color 0.3s ease;"><a href="https://usadelivery.onrender.com/">Let's take a look</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div data-aos="fade-up" data-aos-duration="2000" class="group relative bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
+          <h5 class="m-2 text-2xl md:text-xl sm:text-lg font-semibold leading-snug tracking-tight text-gray-600 shadow-sm">Key invesment</h5>
+          <img class="h-auto max-w-full rounded-lg transition duration-300 ease-in-out transform group-hover:scale-105" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg" alt="" />
+          <!-- Overlay -->
+          <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out">
+            <div class="bg-black bg-opacity-60 h-full w-full flex items-center justify-center">
+              <div class="text-center p-4">
+                <p class="mb-2 text-white sm:text-sm md:text-base">Engaging gaming experiences right at your fingertips.</p>
+                <button class="rounded-md bg-gray-800 px-6 py-1 text-base font-semibold text-white shadow-sm hover:bg-gray-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600" style="transition: background-color 0.3s ease;"><a href="https://keyinvesmentnwv.onrender.com">Let's take a look</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div data-aos="fade-up" data-aos-duration="2000" class="group relative bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
+          <h5 class="m-2 text-2xl md:text-xl sm:text-lg font-semibold leading-snug tracking-tight text-gray-600 shadow-sm">Machine Learning Prediction</h5>
+          <img class="h-auto max-w-full rounded-lg transition duration-300 ease-in-out transform group-hover:scale-105" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg" alt="" />
+          <!-- Overlay -->
+          <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out">
+            <div class="bg-black bg-opacity-60 h-full w-full flex items-center justify-center">
+              <div class="text-center p-4">
+                <p class="mb-2 text-white sm:text-sm md:text-base">Engaging gaming experiences right at your fingertips.</p>
+                <button class="rounded-md bg-gray-800 px-6 py-1 text-base font-semibold text-white shadow-sm hover:bg-gray-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600" style="transition: background-color 0.3s ease;"><a href="https://play.google.com/store/apps/details?id=com.DinamicoGames.LecturaInteractiva&hl=en&gl=US">Let's take a look</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="2000" class="group relative bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
+          <h5 class="m-2 text-2xl md:text-xl sm:text-lg font-semibold leading-snug tracking-tight text-gray-600 shadow-sm">Personal To do Task</h5>
+          <img class="h-auto max-w-full rounded-lg transition duration-300 ease-in-out transform group-hover:scale-105" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg" alt="" />
+          <!-- Overlay -->
+          <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out">
+            <div class="bg-black bg-opacity-60 h-full w-full flex items-center justify-center">
+              <div class="text-center p-4">
+                <p class="mb-2 text-white sm:text-sm md:text-base">Engaging gaming experiences right at your fingertips.</p>
+                <button class="rounded-md bg-gray-800 px-6 py-1 text-base font-semibold text-white shadow-sm hover:bg-gray-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600" style="transition: background-color 0.3s ease;"><a href="https://play.google.com/store/apps/details?id=com.DinamicoGames.LecturaInteractiva&hl=en&gl=US">Let's take a look</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="2000" class="group relative bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
+          <h5 class="m-2 text-2xl md:text-xl sm:text-lg font-semibold leading-snug tracking-tight text-gray-600 shadow-sm">Random</h5>
+          <img class="h-auto max-w-full rounded-lg transition duration-300 ease-in-out transform group-hover:scale-105" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg" alt="" />
+          <!-- Overlay -->
+          <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out">
+            <div class="bg-black bg-opacity-60 h-full w-full flex items-center justify-center">
+              <div class="text-center p-4">
+                <p class="mb-2 text-white sm:text-sm md:text-base">Engaging gaming experiences right at your fingertips.</p>
+                <button class="rounded-md bg-gray-800 px-6 py-1 text-base font-semibold text-white shadow-sm hover:bg-gray-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600" style="transition: background-color 0.3s ease;"><a href="https://play.google.com/store/apps/details?id=com.DinamicoGames.LecturaInteractiva&hl=en&gl=US">Let's take a look</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="relative isolate px-6 pt-14 lg:px-8" style="font-family: 'Raleway',sans-serif; line-height: 1.6; color: #333;">
+      <div class="mx-auto max-w-2xl py-12 sm:py-10 lg:py-10">
+        <div class="text-center">
+          <h1 data-aos="flip-left" data-aos-duration="2000" style="font-size: 2.5em; font-weight: bold; margin-bottom: 20px ;">About me</h1>
+
+          <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+        </div>
+      </div>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 m-7">
+      <!-- Columna para las imágenes -->
+      <div class="flex flex-wrap justify-between">
+        <!-- Primera fila con dos imágenes -->
+        <div data-aos="zoom-in" data-aos-duration="2000" class="w-1/2 p-2">
+          <img alt="gallery" class="block w-full rounded-lg object-cover object-center" src="https://images.unsplash.com/photo-1449247709967-d4461a6a6103?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+        </div>
+        <div data-aos="zoom-in" data-aos-duration="2000" class="w-1/2 p-2">
+          <img alt="gallery" class="block w-full rounded-lg object-cover object-center" src="https://images.unsplash.com/photo-1493606278519-11aa9f86e40a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+        </div>
+        <!-- Segunda fila con una sola imagen -->
+        <div data-aos="zoom-in" data-aos-duration="2000" class="w-1/2 p-2">
+          <img alt="gallery" class="block w-full rounded-lg object-cover object-center" src="https://images.unsplash.com/photo-1471086569966-db3eebc25a59?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+        </div>
+        <div data-aos="zoom-in" data-aos-duration="2000" class="w-1/2 p-2">
+          <img alt="gallery" class="block w-full rounded-lg object-cover object-center" src="https://images.unsplash.com/photo-1502945015378-0e284ca1a5be?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+        </div>
+      </div>
+      <!-- Columna para el texto -->
+      <div data-aos="fade-up" data-aos-duration="2000" style="font-family: 'Raleway',sans-serif; line-height: 1.6; color: #333;">
+        <p class="font-size: 1em; font-weight: 400; margin-bottom: 20px;" style="font-family: 'Open Sans', sans-serif; font-size: 1em; font-weight: 400; margin-bottom: 20px;">
+          As a passionate programmer who found magic in code, bringing innovative ideas to life through technology. My journey into the world of programming wasn't the traditional route; instead, I honed my skills through virtual schools and maximized the use of digital resources.
+          <br /><br />
+          This path gave me a unique and adaptable insight into learning and technical application. I don't just love to code, but I'm also an eternal learner. Every new concept or technique offers me a different perspective of the world. I strongly believe in researching and acting upon the knowledge I gather.
+          <br /><br />
+          To me, learning is a window to countless possibilities and worldviews.
+          <br /><br />
+          But when I'm not engrossed in lines of code or seeking new knowledge, you'll find me diving into a pool, running a race, or engrossed in the pages of a manga. Engaging in sports, especially swimming and running, not only keeps me fit but also provides a means to clear my mind and find inspiration. And manga, with its tales and artistry, fuels my imagination and creativity.
+        </p>
+      </div>
+    </div>
+
+    {% comment %}
+    <div class="text-center" style="font-family: 'Raleway',sans-serif; line-height: 1.6; color: #333;">
+      <h1 data-aos="flip-left" data-aos-duration="2000" style="font-size: 2.5em; font-weight: bold; margin-bottom: 20px;">Contact me</h1>
+    </div> {% endcomment %}
+    <div class="relative isolate px-6 pt-14 lg:px-8" style="font-family: 'Raleway',sans-serif; line-height: 1.6; color: #333;">
+      <div class="mx-auto max-w-2xl py-12 sm:py-10 lg:py-10">
+        <div class="text-center">
+          <h1 data-aos="flip-left" data-aos-duration="2000" style="font-size: 2.5em; font-weight: bold; margin-bottom: 20px ;">Contact me</h1>
+
+          <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
           
-            <!-- corregir let me know to format correctly--->
-          <div  data-aos="zoom-in"  data-aos-duration="2000" class=" w-full row-span-1 flex items-center justify-center">
-            <div class="text-center m-3" style="font-family: 'Raleway',sans-serif; line-height: 1.6; color: #333;">
-                          <h3  style="font-size: 2em; margin-bottom: 10px ;" data-aos="zoom-in-up" data-aos-duration="2000" style="font-family: 'Roboto', sans-serif; font-size: 1.5em; font-weight: bold; color: #333;">Let me know your ideas or yout thoughts , I'm interested for working with you</h3>
-            </div>
-          </div>
-        
-          <form  data-aos="zoom-in"  data-aos-duration="2000" class="w-full mt-20 space-y-6 bg-white p-8 rounded-lg shadow-md" method="post" style="font-family: 'Raleway',sans-serif; line-height: 1.6; color: #333;">
-            {% csrf_token %}
-            <div class="space-y-4">
-                <label for="{{ form.name.id_for_label }}" style="font-family: 'Open Sans', sans-serif; font-size: 1em; font-weight: 400; margin-bottom: 20px;" class="block text-sm font-medium text-gray-600">Your Name</label>
-                <input type="text" name="{{ form.name.name }}" id="{{ form.name.id_for_label }}" class="block w-full p-3 text-sm rounded-lg bg-gray-100 border border-gray-300 focus:outline-none focus:border-gray-400 focus:ring-2 focus:ring-gray-200 transition duration-150 ease-in-out" value="{{ form.name.value|default:'' }}" required>
-            </div>
-        
-            <div class="space-y-4">
-                <label for="{{ form.email.id_for_label }}" style="font-family: 'Open Sans', sans-serif; font-size: 1em; font-weight: 400; margin-bottom: 20px;" class="block text-sm font-medium text-gray-600">Your email</label>
-                <input type="email" name="{{ form.email.name }}" id="{{ form.email.id_for_label }}" class="block w-full p-3 text-sm rounded-lg bg-gray-100 border border-gray-300 focus:outline-none focus:border-gray-400 focus:ring-2 focus:ring-gray-200 transition duration-150 ease-in-out" value="{{ form.email.value|default:'' }}" required>
-            </div>
-        
-            <div class="space-y-4">
-                <label for="{{ form.subject.id_for_label }}" style="font-family: 'Open Sans', sans-serif; font-size: 1em; font-weight: 400; margin-bottom: 20px;" class="block text-sm font-medium text-gray-600">Subject</label>
-                <input type="text" name="{{ form.subject.name }}" id="{{ form.subject.id_for_label }}" class="block w-full p-3 text-sm rounded-lg bg-gray-100 border border-gray-300 focus:outline-none focus:border-gray-400 focus:ring-2 focus:ring-gray-200 transition duration-150 ease-in-out" value="{{ form.subject.value|default:'' }}" required>
-            </div>
-        
-            <div class="space-y-4">
-                <label for="{{ form.message.id_for_label }}" style="font-family: 'Open Sans', sans-serif; font-size: 1em; font-weight: 400; margin-bottom: 20px;" class="block text-sm font-medium text-gray-600">Your message</label>
-                <textarea name="{{ form.message.name }}" id="{{ form.message.id_for_label }}" rows="5" class="block w-full p-3 text-sm rounded-lg bg-gray-100 border border-gray-300 focus:outline-none focus:border-gray-400 focus:ring-2 focus:ring-gray-200 transition duration-150 ease-in-out">{{ form.message.value|default:'' }}</textarea>
-            </div>
-        
-            <button type="submit" style="font-family: 'Open Sans', sans-serif; font-size: 1em; font-weight: 400; margin-bottom: 20px;" class="py-3 px-6 text-white rounded-lg bg-gray-800 hover:bg-gray-700 focus:outline-none focus:border-gray-700 focus:ring-2 focus:ring-gray-300 transition duration-150 ease-in-out">Enviar</button>
-        </form>
-        
+        </div>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <div data-aos="zoom-in" data-aos-duration="2000" class="w-full row-span-1 flex items-center justify-center">
+        <div class="text-center m-3" style="font-family: 'Raleway',sans-serif; line-height: 1.6; color: #333;">
+          <h3 style="font-size: 2em; margin-bottom: 10px ;" data-aos="zoom-in-up" data-aos-duration="2000" style="font-family: 'Roboto', sans-serif; font-size: 1.5em; font-weight: bold; color: #333;">Let me know your ideas or yout thoughts , I'm interested for working with you</h3>
+        </div>
+      </div>
+
+      <form data-aos="zoom-in" data-aos-duration="2000" class="w-full mt-20 space-y-6 bg-white p-8 rounded-lg shadow-md" method="post" style="font-family: 'Raleway',sans-serif; line-height: 1.6; color: #333;">
+        {% csrf_token %}
+        <div class="space-y-4">
+          <label for="{{ form.name.id_for_label }}" style="font-family: 'Open Sans', sans-serif; font-size: 1em; font-weight: 400; margin-bottom: 20px;" class="block text-sm font-medium text-gray-600">Your Name</label>
+          <input type="text" name="{{ form.name.name }}" id="{{ form.name.id_for_label }}" class="block w-full p-3 text-sm rounded-lg bg-gray-100 border border-gray-300 focus:outline-none focus:border-gray-400 focus:ring-2 focus:ring-gray-200 transition duration-150 ease-in-out" value="{{ form.name.value|default:'' }}" required />
         </div>
 
-        <footer class="bg-white">
-          <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
-            <div class="md:flex md:justify-between">
-              <div class="mb-6 md:mb-0">
-                <a href="" class="flex items-center">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    
-                    class="w-6 h-6"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z"
-                    />
-                  </svg>
+        <div class="space-y-4">
+          <label for="{{ form.email.id_for_label }}" style="font-family: 'Open Sans', sans-serif; font-size: 1em; font-weight: 400; margin-bottom: 20px;" class="block text-sm font-medium text-gray-600">Your email</label>
+          <input type="email" name="{{ form.email.name }}" id="{{ form.email.id_for_label }}" class="block w-full p-3 text-sm rounded-lg bg-gray-100 border border-gray-300 focus:outline-none focus:border-gray-400 focus:ring-2 focus:ring-gray-200 transition duration-150 ease-in-out" value="{{ form.email.value|default:'' }}" required />
+        </div>
 
-                  
-                    <span class="self-center text-2xl font-semibold whitespace-nowrap">
-                    
-                    </span>
-                  
-                </a>
-              </div>
-            </div>
-            <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-            <div  class="sm:flex sm:items-center sm:justify-between">
-              <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
-                <a
-                  href="https://github.com/HidenLacan"
-                  class="text-gray-500 "
-                >
-                  <svg
-                    class="w-5 h-5"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                    aria-hidden="true"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
-                      clip-rule="evenodd"
-                    />
-                  </svg>
-                  <span class="sr-only">GitHub account</span>
-                </a>
-              </div>
-            </div>
+        <div class="space-y-4">
+          <label for="{{ form.subject.id_for_label }}" style="font-family: 'Open Sans', sans-serif; font-size: 1em; font-weight: 400; margin-bottom: 20px;" class="block text-sm font-medium text-gray-600">Subject</label>
+          <input type="text" name="{{ form.subject.name }}" id="{{ form.subject.id_for_label }}" class="block w-full p-3 text-sm rounded-lg bg-gray-100 border border-gray-300 focus:outline-none focus:border-gray-400 focus:ring-2 focus:ring-gray-200 transition duration-150 ease-in-out" value="{{ form.subject.value|default:'' }}" required />
+        </div>
+
+        <div class="space-y-4">
+          <label for="{{ form.message.id_for_label }}" style="font-family: 'Open Sans', sans-serif; font-size: 1em; font-weight: 400; margin-bottom: 20px;" class="block text-sm font-medium text-gray-600">Your message</label>
+          <textarea name="{{ form.message.name }}" id="{{ form.message.id_for_label }}" rows="5" class="block w-full p-3 text-sm rounded-lg bg-gray-100 border border-gray-300 focus:outline-none focus:border-gray-400 focus:ring-2 focus:ring-gray-200 transition duration-150 ease-in-out">{{ form.message.value|default:'' }}</textarea>
+        </div>
+
+        <button type="submit" style="font-family: 'Open Sans', sans-serif; font-size: 1em; font-weight: 400; margin-bottom: 20px;" class="py-3 px-6 text-white rounded-lg bg-gray-800 hover:bg-gray-700 focus:outline-none focus:border-gray-700 focus:ring-2 focus:ring-gray-300 transition duration-150 ease-in-out">Enviar</button>
+      </form>
+    </div>
+
+    <footer class="bg-white">
+      <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+        <div class="md:flex md:justify-between">
+          <div class="mb-6 md:mb-0">
+            <a href="" class="flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z" />
+              </svg>
+
+              <span class="self-center text-2xl font-semibold whitespace-nowrap"></span>
+            </a>
           </div>
-        </footer>
+        </div>
+        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+        <div class="sm:flex sm:items-center sm:justify-between">
+          <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
+            <a href="https://github.com/HidenLacan" class="text-gray-500">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" />
+              </svg>
+              <span class="sr-only">GitHub account</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
-          AOS.init();
-        </script>
-
-    </body>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init()
+    </script>
+  </body>
 </html>
-
