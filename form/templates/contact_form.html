@@ -16,7 +16,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Raleway:wght@100&display=swap" rel="stylesheet" />
-  
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     {% load static %}
   </head>
 
@@ -121,7 +122,7 @@
     </div>
 
     <div class="text-center" style="font-family: 'Raleway',sans-serif; line-height: 1.6; color: #333;">
-      <div class="m-3 grid grid-cols-2 md:grid-cols-3 gap-4">
+      <div class="m-3 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
         <div data-aos="fade-up" data-aos-duration="2000" class="group relative bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
           <h5 class="m-2 text-2xl md:text-xl sm:text-lg font-semibold leading-snug tracking-tight text-gray-600 shadow-sm">Dinamico Games</h5>
           <img class="h-auto max-w-full rounded-lg transition duration-300 ease-in-out transform group-hover:scale-105" src="../static/dina.jpg" alt="" />
@@ -131,6 +132,26 @@
               <div class="text-center p-4">
                 <p class="mb-2 text-white sm:text-sm md:text-base">Dinamico Games is an idea to help kids with learning disabilities in various formats.</p>
                 <button class="rounded-md bg-gray-800 px-6 py-1 text-base font-semibold text-white shadow-sm hover:bg-gray-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600" style="transition: background-color 0.3s ease;"><a href="https://play.google.com/store/search?q=DinamicoGames&c=apps">Let's take a look</a></button>
+                
+                <div class="mt-4 flex justify-center space-x-4">
+                  <div class="flex flex-col items-center">
+                      <i class="fa-solid fa-c text-xl sm:text-m md:text-xl lg:text-xl text-white"></i>
+                    
+                      <span class="mt-2 text-white text-xs sm:text-sm md:text-base lg:text-lg">C#</span>
+                  </div>
+                  <div class="flex flex-col items-center">
+                      {% comment %} <i class="fab fa-python text-xl sm:text-m md:text-xl lg:text-xl text-white"></i> {% endcomment %}
+                      <span class="mt-2 text-white text-xs sm:text-sm md:text-base lg:text-lg">Unity</span>
+                  </div>
+                  <div class="flex flex-col items-center">
+                      {% comment %} <i class="fab fa-github text-xl sm:text-m md:text-xl lg:text-xl text-white"></i> {% endcomment %}
+                      <span class="mt-2 text-white text-xs sm:text-sm md:text-base lg:text-lg">GitHub</span>
+                  </div>
+                  <div class="flex flex-col items-center">
+                      {% comment %} <i class="fas fa-code-branch text-xl sm:text-m md:text-xl lg:text-xl text-white"></i> <!-- No specific Git icon, using a branching icon --> {% endcomment %}
+                      <span class="mt-2 text-white text-xs sm:text-sm md:text-base lg:text-lg">Git</span>
+                  </div>
+                </div>
                 
               </div>
             </div>
@@ -146,6 +167,30 @@
               <div class="text-center p-4">
                 <p class="mb-2 text-white sm:text-sm md:text-base">E-commerce to sell products in Mexico with various payment integration.</p>
                 <button class="rounded-md bg-gray-800 px-6 py-1 text-base font-semibold text-white shadow-sm hover:bg-gray-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600" style="transition: background-color 0.3s ease;"><a href="https://usadelivery.onrender.com/">Let's take a look</a></button>
+                <div class="mt-4 flex justify-center space-x-4">
+                  <div class="flex flex-col items-center">
+                      <i class="fab fa-js text-xl sm:text-m md:text-xl lg:text-xl text-white"></i>
+                      <span class="mt-2 text-white text-xs sm:text-sm md:text-base lg:text-lg">JavaScript</span>
+                  </div>
+                  <div class="flex flex-col items-center">
+                      <i class="fab fa-python text-xl sm:text-m md:text-xl lg:text-xl text-white"></i>
+                      <span class="mt-2 text-white text-xs sm:text-sm md:text-base lg:text-lg">Python</span>
+                  </div>
+                  <div class="flex flex-col items-center">
+                      <i class="fas fa-database text-xl sm:text-m md:text-xl lg:text-xl text-white"></i> <!-- No specific Django icon, using a database icon -->
+                      <span class="mt-2 text-white text-xs sm:text-sm md:text-base lg:text-lg">Django</span>
+                  </div>
+                  <div class="flex flex-col items-center">
+                      <i class="fab fa-github text-xl sm:text-m md:text-xl lg:text-xl text-white"></i>
+                      <span class="mt-2 text-white text-xs sm:text-sm md:text-base lg:text-lg">GitHub</span>
+                  </div>
+                  <div class="flex flex-col items-center">
+                      <i class="fas fa-code-branch text-xl sm:text-m md:text-xl lg:text-xl text-white"></i> <!-- No specific Git icon, using a branching icon -->
+                      <span class="mt-2 text-white text-xs sm:text-sm md:text-base lg:text-lg">Git</span>
+                  </div>
+                </div>
+                   
+
               </div>
             </div>
           </div>
@@ -160,6 +205,29 @@
               <div class="text-center p-4">
                 <p class="mb-2 text-white sm:text-sm md:text-base">A website to give invesment advice using user and public information</p>
                 <button class="rounded-md bg-gray-800 px-6 py-1 text-base font-semibold text-white shadow-sm hover:bg-gray-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600" style="transition: background-color 0.3s ease;"><a href="https://keyinvesmentnwv.onrender.com">Let's take a look</a></button>
+                <div class="mt-4 flex justify-center space-x-4">
+                  <div class="flex flex-col items-center">
+                      <i class="fab fa-js text-xl sm:text-m md:text-xl lg:text-xl text-white"></i>
+                      <span class="mt-2 text-white text-xs sm:text-sm md:text-base lg:text-lg">JavaScript</span>
+                  </div>
+                  <div class="flex flex-col items-center">
+                      <i class="fab fa-python text-xl sm:text-m md:text-xl lg:text-xl text-white"></i>
+                      <span class="mt-2 text-white text-xs sm:text-sm md:text-base lg:text-lg">Python</span>
+                  </div>
+                  <div class="flex flex-col items-center">
+                      <i class="fas fa-database text-xl sm:text-m md:text-xl lg:text-xl text-white"></i> <!-- No specific Django icon, using a database icon -->
+                      <span class="mt-2 text-white text-xs sm:text-sm md:text-base lg:text-lg">Django</span>
+                  </div>
+                  <div class="flex flex-col items-center">
+                      <i class="fab fa-github text-xl sm:text-m md:text-xl lg:text-xl text-white"></i>
+                      <span class="mt-2 text-white text-xs sm:text-sm md:text-base lg:text-lg">GitHub</span>
+                  </div>
+                  <div class="flex flex-col items-center">
+                      <i class="fas fa-code-branch text-xl sm:text-m md:text-xl lg:text-xl text-white"></i> <!-- No specific Git icon, using a branching icon -->
+                      <span class="mt-2 text-white text-xs sm:text-sm md:text-base lg:text-lg">Git</span>
+                  </div>
+                </div>
+              
               </div>
             </div>
           </div>
@@ -174,6 +242,28 @@
               <div class="text-center p-4">
                 <p class="mb-2 text-white sm:text-sm md:text-base"> Prediction about hospital re-admission using public and user information.</p>
                 <button class="rounded-md bg-gray-800 px-6 py-1 text-base font-semibold text-white shadow-sm hover:bg-gray-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600" style="transition: background-color 0.3s ease;"><a href="https://heartmodel-pk6u.onrender.com/api/prediction/">Let's take a look</a></button>
+                <div class="mt-4 flex justify-center space-x-4">
+                  <div class="flex flex-col items-center">
+                      <i class="fab fa-js text-xl sm:text-m md:text-xl lg:text-xl text-white"></i>
+                      <span class="mt-2 text-white text-xs sm:text-sm md:text-base lg:text-lg">JavaScript</span>
+                  </div>
+                  <div class="flex flex-col items-center">
+                      <i class="fab fa-python text-xl sm:text-m md:text-xl lg:text-xl text-white"></i>
+                      <span class="mt-2 text-white text-xs sm:text-sm md:text-base lg:text-lg">Python</span>
+                  </div>
+                  <div class="flex flex-col items-center">
+                      <i class="fas fa-database text-xl sm:text-m md:text-xl lg:text-xl text-white"></i> <!-- No specific Django icon, using a database icon -->
+                      <span class="mt-2 text-white text-xs sm:text-sm md:text-base lg:text-lg">Django</span>
+                  </div>
+                  <div class="flex flex-col items-center">
+                      <i class="fab fa-github text-xl sm:text-m md:text-xl lg:text-xl text-white"></i>
+                      <span class="mt-2 text-white text-xs sm:text-sm md:text-base lg:text-lg">GitHub</span>
+                  </div>
+                  <div class="flex flex-col items-center">
+                      <i class="fas fa-code-branch text-xl sm:text-m md:text-xl lg:text-xl text-white"></i> <!-- No specific Git icon, using a branching icon -->
+                      <span class="mt-2 text-white text-xs sm:text-sm md:text-base lg:text-lg">Git</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -187,6 +277,29 @@
               <div class="text-center p-4">
                 <p class="mb-2 text-white sm:text-sm md:text-base">Personal portfolio about data science exercise by Triple Ten</p>
                 <button class="rounded-md bg-gray-800 px-6 py-1 text-base font-semibold text-white shadow-sm hover:bg-gray-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600" style="transition: background-color 0.3s ease;"><a href="https://luis-bello-datascience.onrender.com/">Let's take a look</a></button>
+                <div class="mt-4 flex justify-center space-x-4">
+                  <div class="flex flex-col items-center">
+                      <i class="fab fa-js text-xl sm:text-m md:text-xl lg:text-xl text-white"></i>
+                      <span class="mt-2 text-white text-xs sm:text-sm md:text-base lg:text-lg">JavaScript</span>
+                  </div>
+                  <div class="flex flex-col items-center">
+                      <i class="fab fa-python text-xl sm:text-m md:text-xl lg:text-xl text-white"></i>
+                      <span class="mt-2 text-white text-xs sm:text-sm md:text-base lg:text-lg">Python</span>
+                  </div>
+                  <div class="flex flex-col items-center">
+                      <i class="fas fa-database text-xl sm:text-m md:text-xl lg:text-xl text-white"></i> <!-- No specific Django icon, using a database icon -->
+                      <span class="mt-2 text-white text-xs sm:text-sm md:text-base lg:text-lg">Django</span>
+                  </div>
+                  <div class="flex flex-col items-center">
+                      <i class="fab fa-github text-xl sm:text-m md:text-xl lg:text-xl text-white"></i>
+                      <span class="mt-2 text-white text-xs sm:text-sm md:text-base lg:text-lg">GitHub</span>
+                  </div>
+                  <div class="flex flex-col items-center">
+                      <i class="fas fa-code-branch text-xl sm:text-m md:text-xl lg:text-xl text-white"></i> <!-- No specific Git icon, using a branching icon -->
+                      <span class="mt-2 text-white text-xs sm:text-sm md:text-base lg:text-lg">Git</span>
+                  </div>
+                </div>
+              
               </div>
             </div>
           </div>
@@ -199,7 +312,29 @@
             <div class="bg-black bg-opacity-60 h-full w-full flex items-center justify-center">
               <div class="text-center p-4">
                 <p class="mb-2 text-white sm:text-sm md:text-base">A web page that provide advices and information about the knowled economy, with features to be more precise.</p>
-                <button class="rounded-md bg-gray-800 px-6 py-1 text-base font-semibold text-white shadow-sm hover:bg-gray-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600" style="transition: background-color 0.3s ease;"><a href="https://thebrick.onrender.com/">Let's take a look</a></button>
+                <button class="rounded-md bg-gray-800 px-6 py-1 text-base font-semibold text-white shadow-sm hover:bg-gray-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600" style="transition: background-color 0.3s ease;"><a href="https://thebrick.onrender.com/">Building ....</a></button>
+                <div class="mt-4 flex justify-center space-x-4">
+                  <div class="flex flex-col items-center">
+                      <i class="fab fa-js text-xl sm:text-m md:text-xl lg:text-xl text-white"></i>
+                      <span class="mt-2 text-white text-xs sm:text-sm md:text-base lg:text-lg">JavaScript</span>
+                  </div>
+                  <div class="flex flex-col items-center">
+                      <i class="fab fa-python text-xl sm:text-m md:text-xl lg:text-xl text-white"></i>
+                      <span class="mt-2 text-white text-xs sm:text-sm md:text-base lg:text-lg">Python</span>
+                  </div>
+                  <div class="flex flex-col items-center">
+                      <i class="fas fa-database text-xl sm:text-m md:text-xl lg:text-xl text-white"></i> <!-- No specific Django icon, using a database icon -->
+                      <span class="mt-2 text-white text-xs sm:text-sm md:text-base lg:text-lg">Django</span>
+                  </div>
+                  <div class="flex flex-col items-center">
+                      <i class="fab fa-github text-xl sm:text-m md:text-xl lg:text-xl text-white"></i>
+                      <span class="mt-2 text-white text-xs sm:text-sm md:text-base lg:text-lg">GitHub</span>
+                  </div>
+                  <div class="flex flex-col items-center">
+                      <i class="fas fa-code-branch text-xl sm:text-m md:text-xl lg:text-xl text-white"></i> <!-- No specific Git icon, using a branching icon -->
+                      <span class="mt-2 text-white text-xs sm:text-sm md:text-base lg:text-lg">Git</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
