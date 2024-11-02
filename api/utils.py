@@ -8,9 +8,10 @@ from langchain_openai import OpenAIEmbeddings
 from langchain_community.document_loaders import UnstructuredWordDocumentLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.prompts import PromptTemplate
-from langchain_community.vectorstores import FAISS
-from langchain.prompts import SystemMessagePromptTemplate, HumanMessagePromptTemplate, ChatPromptTemplate
-from langchain.chains import RetrievalQA
+
+
+
+from langchain.chains import LLMChain
 
 # Configuración de Twilio
 account_sid = config("TWILIO_ACCOUNT_SID")
@@ -38,34 +39,13 @@ def send_message(to_number, body_text):
 
 
 
-# def save_response_log(phone_number, description, response, start_date):
-#     data = {
-#         "Phone_number": phone_number,
-#         "Description": description,
-#         "Response": response,
-#         "Start_Date": start_date,
-#     }
-#     logger.info(f"Datos enviados a Airtable tabla de response log {data}")
-#     try:
-#         record = table_log.create(data)
-#         logger.info(f"Registro creado en tabla response log , datos: {record}")
-#     except Exception as e:
-#         logger.info(f"Error al crear el registro en airtable {e}")
-#         raise
-
-
 
 
 # Setup logger
 logger = logging.getLogger(__name__)
 
 def setup_langchain():
-    # Step 1: Configure embeddings for the QA system
-    embeddings = OpenAIEmbeddings(
-        openai_api_key=config("OPENAI_API_KEY")
-    )  
-    
-    # Step 2: Define the prompt template with specific instructions
+    # Define the custom prompt template
     prompt_template = """
     **Role:**
     You are an advanced programming assistant, highly knowledgeable in software development and data science. You are aware of the user's background in full-stack development, including experience with Python, JavaScript, C#, Django, React, and Node.js, as well as data science and machine learning. Your goal is to provide precise, relevant, and efficient guidance that aligns with the user's expertise level.
@@ -92,33 +72,29 @@ def setup_langchain():
 
     ---
 
-    **Context:**
-    {context}
-
     **Question:**
     {question}
 
     **Response:**
     """
 
-    # Step 3: Define the prompt template for LangChain
+    # Configure the prompt template for LangChain
     PROMPT = PromptTemplate(
-        template=prompt_template, input_variables=["context", "question"]
+        template=prompt_template, input_variables=["question"]
     )
 
-    # Step 4: Configure the language model
+    # Configure the language model
     llm = ChatOpenAI(
-        model_name="gpt-4o-mini",  # Switch to "gpt-3.5-turbo" if GPT-4 is unavailable
+        model_name="gpt-4o-mini",  # Use "gpt-3.5-turbo" if GPT-4 is unavailable
         temperature=0,
-        max_tokens=600,
+        max_tokens=500,
         openai_api_key=config("OPENAI_API_KEY"),
     )
 
-    # Step 5: Create the question-answering chain with retrieval
-    qa_chain = RetrievalQA.from_chain_type(
+    # Create an LLM chain with the prompt template and language model
+    qa_chain = LLMChain(
         llm=llm,
-        chain_type="stuff",
-        chain_type_kwargs={"prompt": PROMPT},  
+        prompt=PROMPT,
     )
     return qa_chain
 
@@ -129,22 +105,9 @@ qa_chain = setup_langchain()
 def responder_consulta(consulta):
     try:
         # Generate a response for the given query
-        resultado = qa_chain({"query": consulta})
-        respuesta = resultado["result"]
+        resultado = qa_chain({"question": consulta})
+        respuesta = resultado["text"]
         return respuesta
     except Exception as e:
-        logger.error(f"Error al generar respuesta con LangChain: {e}")
-        return "Lo siento, ocurrió un error al procesar su solicitud."
-
-
-
-# Función para responder a las consultas informativas
-def responder_consulta(consulta):
-    try:
-        resultado = qa_chain({"query": consulta})
-        respuesta = resultado["result"]
-        return respuesta
-    except Exception as e:
-        logger.error(f"Error al generar respuesta con LangChain: {e}")
-        return "Lo siento, ocurrió un error al procesar su solicitud."
-
+        logger.error(f"Error generating response with LangChain: {e}")
+        return "I'm sorry, an error occurred while processing your request."
